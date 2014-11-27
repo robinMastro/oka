@@ -24,23 +24,24 @@ var choiceCaf=
 {
 	drag1 : function(e){
 		e.preventDefault();
-		document.getElementById("btn1").style.left=e.offsetX+"px";
-		document.getElementById("sliderRange1").style.width=((e.offsetX)/3)+"%";
-		self.btn1pos=parseInt(e.offsetX/3);
+		document.getElementById("btn1").style.left=e.layerX+"px";
+		document.getElementById("sliderRange1").style.width=((e.layerX)/3)+"%";
+		self.btn1pos=parseInt(e.layerX/3);
 		self.clicked1=true;
+		console.log('test');
 	},
 	drag2 : function(e){
 		e.preventDefault();
-		document.getElementById("btn2").style.left=e.offsetX+"px";
-		document.getElementById("sliderRange2").style.width=((e.offsetX)/3)+"%";
-		self.btn2pos=parseInt(e.offsetX/3);
+		document.getElementById("btn2").style.left=e.layerX+"px";
+		document.getElementById("sliderRange2").style.width=((e.layerX)/3)+"%";
+		self.btn2pos=parseInt(e.layerX/3);
 		self.clicked2=true;
 	},
 	drag3 : function(e){
 		e.preventDefault();
-		document.getElementById("btn3").style.left=e.offsetX+"px";
-		document.getElementById("sliderRange3").style.width=((e.offsetX)/3)+"%";
-		self.btn3pos=parseInt(e.offsetX/3);
+		document.getElementById("btn3").style.left=e.layerX+"px";
+		document.getElementById("sliderRange3").style.width=((e.layerX)/3)+"%";
+		self.btn3pos=parseInt(e.layerX/3);
 		self.clicked3=true;
 	},
 	move : function (e){
@@ -49,21 +50,21 @@ var choiceCaf=
 
 		if(self.clicked1==true)
 		{
-			document.getElementById("btn1").style.left=e.offsetX+"px";
-			document.getElementById("sliderRange1").style.width=((e.offsetX)/3)+"%";
-			self.btn1pos=parseInt(e.offsetX/3);
+			document.getElementById("btn1").style.left=e.layerX+"px";
+			document.getElementById("sliderRange1").style.width=((e.layerX)/3)+"%";
+			self.btn1pos=parseInt(e.layerX/3);
 		}
 		if(self.clicked2==true)
 		{
-			document.getElementById("btn2").style.left=e.offsetX+"px";
-			document.getElementById("sliderRange2").style.width=((e.offsetX)/3)+"%";
-			self.btn2pos=parseInt(e.offsetX/3);
+			document.getElementById("btn2").style.left=e.layerX+"px";
+			document.getElementById("sliderRange2").style.width=((e.layerX)/3)+"%";
+			self.btn2pos=parseInt(e.layerX/3);
 		}
 		if(self.clicked3==true)
 		{
-			document.getElementById("btn3").style.left=e.offsetX+"px";
-			document.getElementById("sliderRange3").style.width=((e.offsetX)/3)+"%";
-			self.btn3pos=parseInt(e.offsetX/3);
+			document.getElementById("btn3").style.left=e.layerX+"px";
+			document.getElementById("sliderRange3").style.width=((e.layerX)/3)+"%";
+			self.btn3pos=parseInt(e.layerX/3);
 		}
 		switch(true){
 			case self.btn2pos>45 && self.btn2pos<=70 && self.btn3pos<=20:
@@ -190,6 +191,8 @@ var choiceCaf=
 document.getElementById("balizSlidestop1").addEventListener('mousedown', choiceCaf.drag1, false);
 document.getElementById("balizSlidestop2").addEventListener('mousedown', choiceCaf.drag2, false);
 document.getElementById("balizSlidestop3").addEventListener('mousedown', choiceCaf.drag3, false);
-self.test.onmousemove = function() {choiceCaf.move(event)};
+self.test.addEventListener('mousemove', choiceCaf.move, false);
+
+// self.test.onmousemove = function() {choiceCaf.move(event)};
 document.addEventListener('mouseup', choiceCaf.drop, false);
 

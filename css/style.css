@@ -8,7 +8,6 @@
 /************************************************************************/
 /************************************************************************/
 
-/* testGith */
 
 * {
   -moz-box-sizing: border-box;
@@ -159,6 +158,9 @@ h4{
     left: 20%;
     background: white;
 }
+#page-data .titreHome:after{
+  background: url('../images/h2-heart.png') no-repeat 0 0;
+}
 #page-data .presentation{
   background: url('../images/background-data.jpg') no-repeat center center;
   -webkit-background-size: cover;
@@ -175,6 +177,14 @@ h4{
     height: 100%;
     left: 60%;
     background: white;
+}
+#page-infos .titreHome:after{
+  background: url('../images/h2-secret.png') no-repeat 0 0;
+  height: 16px;
+}
+#page-infos .infosHome h3:after{
+  background: url('../images/h3-grain.png') no-repeat 0 0;
+  height: 14px;
 }
 #page-eco {
     height: 100%;
@@ -308,6 +318,10 @@ nav ul li:hover{
     font-size: 18px;
     color: white; 
     text-align: center;
+}
+#homepage .infosHome h3:after{
+  background: url('../images/h3-infoutile.png') no-repeat 0 0;
+  height: 16px;
 }
 .titreHome p:before, .titreHome p:after{
   content: '';
@@ -472,7 +486,7 @@ q {
     z-index: 20;
 }
 .recetteHome h3:after{
-    background: url('../images/glop.png') no-repeat 0 0;
+    background: url('../images/h3-heart.png') no-repeat 0 0;
 }
 .recetteHome p{
   z-index: 60;
@@ -702,8 +716,8 @@ transform: translateZ(.52px) scale(.75);
   max-width: 800px;
 }
 #choixCoffee h3:after{
-    background: url('../images/glop2.png') no-repeat 0 0;
-    height: 15px;
+    background: url('../images/h3-recette.png') no-repeat 0 0;
+    height: 16px;
 }
 #choixCoffee h4{
   margin-bottom: 20px;
@@ -1059,9 +1073,10 @@ transform: translateZ(.52px) scale(.75);
 #page-map{
   background: #e7e7e7;
 }
+
 #mapPresentation h3:after{
-    background: url('../images/glop2.png') no-repeat 0 0;
-    height: 15px;
+    background: url('../images/h3-monde.png') no-repeat 0 0;
+    height: 12px;
 }
 #mapPresentation{
   background: #f2f2f2;
@@ -1161,6 +1176,14 @@ transform: translateZ(.52px) scale(.75);
 }
 #page-eco .titreHome:after{
   background: url('../images/h2-eco.png') no-repeat 0 0;
+}
+#page-eco .recetteHome h3:after{
+  background: url('../images/h3-aider.png') no-repeat 0 0;
+  height: 14px;
+}
+#page-eco .recetteHomeRight h3:after{
+  background: url('../images/h3-revenu.png') no-repeat 0 0;
+  height: 10px;
 }
 #page-eco .titreHome p:before, #page-eco .titreHome p:after{
   width: 110px;
@@ -1417,8 +1440,12 @@ transform: translateZ(.52px) scale(.75);
   padding-bottom: 160px;
 }
 .sectionEcoTexte h3:after {
-  background: url('../images/glop2.png') no-repeat 0 0;
-  height: 15px;
+  background: url('../images/h3-eau.png') no-repeat 0 0;
+  height: 14px;
+}
+section.recetteHome.recetteHomeRight h3:after{
+    background: url('../images/h3-monde.png') no-repeat 0 0;
+    height: 12px;
 }
 .sectionEcoTexte{
   background: #eeeeee;
@@ -1469,8 +1496,8 @@ transform: translateZ(.52px) scale(.75);
 /************************************************************************/
 
 #torrefaction h3:after {
-  background: url('../images/glop2.png') no-repeat 0 0;
-  height: 15px;
+  background: url('../images/h3-torrefecation.png') no-repeat 0 0;
+  height: 16px;
 }
 #torrefaction ul{
   float: left;
@@ -1508,8 +1535,8 @@ transform: translateZ(.52px) scale(.75);
   color: #8c4014;
 }
 #differentMethod h3:after{
-  background: url('../images/glop2.png') no-repeat 0 0;
-  height: 15px;
+  background: url('../images/h3-liste.png') no-repeat 0 0;
+  height: 16px;
 }
 #differentMethod ul{
   float: left;

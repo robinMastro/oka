@@ -4,7 +4,7 @@
                   <section class="presentation">
                     <div class="wrapper titreHome">
                       <h2>Une histoire de café</h2>
-                      <p>Consommer écoresponsable avec Oka</p>
+                      <p>Consommer éco-responsable avec Oka</p>
                     </div><!-- *** END WRAPPER *** -->
                   </section><!-- *** END PRESENTATION *** -->
 
@@ -46,7 +46,7 @@
                   
                   <section class="recetteHome">
                     <div class="wrapper">
-                      <h3>Boisson gourmandes</h3>
+                      <h3>Boissons gourmandes</h3>
                       <img src="images/cafe.png" alt="Créations"/>
                       <p>Retrouvez une selection de boisson gourmandes et raffinées. Afin que vous puissiez trouver la recette qui vous conviendra la force en café, en lait et en sucre est indiquée. De même, vous pourrez voir les calories afin de ne pas faire d'entorse à votre régime ! Bien sur une petite description vous permettra également de choisir parfaitement votre boisson. Laissez-vous tenter !</p>
                       <a onclick="toPage(1)" href="#" class="button">Voir les recettes</a>

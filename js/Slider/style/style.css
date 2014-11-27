@@ -1,0 +1,26 @@
+#panel
+{
+	height:100px;
+	width:300px;
+	background-color:#ababab;
+}
+
+.slider
+{
+	height:0px;
+	width:300px;
+	background-color:#313131;
+	-webkit-transition: all 1s;  Safari 3.1 to 6.0 
+	transition: width 1s;
+	overflow-y: hidden;
+	color :white;
+}
+
+.slideropen
+{
+	height:100px;
+	width:300px;
+	background-color:#313131;
+	-webkit-transition: all 1s;  Safari 3.1 to 6.0 
+	transition: width 1s;
+}

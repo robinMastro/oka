@@ -32,7 +32,6 @@
         </ul>
         <hr class="clear">
         
-        
     </div><!-- *** END AFFICHE *** -->
   </div><!-- *** END POPUP *** -->
   

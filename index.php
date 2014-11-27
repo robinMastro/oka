@@ -13,7 +13,6 @@
         <script>try{Typekit.load();}catch(e){}</script>
         <!-- END script typekit -->
         
-        <script src="js/modernizr.custom.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body onload="loader(); Anecdote()">
@@ -204,7 +203,7 @@
                 </section><!-- *** END DATACOFFEE *** -->
                              
               </div><!-- *** END PAGE DATA *** -->
-              <!-- END PAGE DATA -->
+              
               
                 <!-- PAGE MAPMONDE -->
                   <?php include 'map.php';?> 
@@ -225,7 +224,7 @@
           </div><!-- *** END PAGE WRAPPER *** -->
           
           
-          
+          <script type="text/javascript" src="js/slids.js"></script>
 	</body>
-	<script src="js/slids.js"></script>
+	
 </html>

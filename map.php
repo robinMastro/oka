@@ -15,13 +15,15 @@
         <h3></h3>
         
         <ul class="infos1" id="infos1">
-          <li><img src="images/cafeVert.png"/><p id="remplace1"></p><p id="cafeVert"></p></li>
-          <li><img src="images/arabica.png"/><p id="remplace2"></p><p id="cafeArabica"></p></li>
-          <li><img src="images/robusta.png"/><p id="remplace3"></p><p id="cafeRobusta"></p></li>
+          <li><img src="images/cafeVert.png" alt=" "/><p id="remplace1"></p><p id="cafeVert"></p></li>
+          <li><img src="images/arabica.png" alt=" "/><p id="remplace2"></p><p id="cafeArabica"></p></li>
+          <li><img src="images/robusta.png" alt=" "/><p id="remplace3"></p><p id="cafeRobusta"></p></li>
         </ul>
         <ul id="consoGoblet">
-          <span id="conso"></span>
-          <p id="conso2">Consomation par personnes</p>
+          <li>  
+            <span id="conso"></span>
+            <p id="conso2">Consomation par personnes</p>
+          </li>
         </ul>
         <ul class="infos1" id="infos2">
           <li><p>Superficie</p><p id="superficie"></p></li>
@@ -33,6 +35,8 @@
         
     </div><!-- *** END AFFICHE *** -->
   </div><!-- *** END POPUP *** -->
+  
+  <hr class="clear"/>
 
 <div id="wrapperMap" onclick="allowAnimationMap()">
 
@@ -2649,7 +2653,11 @@
 </g>
 </svg>
 
+<hr class="clear"/>
+
 </div><!-- *** END WRAPPER MAP *** -->
+
+<hr class="clear"/>
 
 </div><!-- *** END PAGE MAP *** -->
 

@@ -26,16 +26,24 @@
 
     <div id="resultat">
         <?php 
+        ?>
+        <ul>
+        <?php 
               foreach($Tweets->statuses as $tweet):
               ?>
-              <p class="tweet">
+              <li class="tweet">
                 <img src="<?php echo $tweet->entities->media[0]->media_url;?>" alt="user picture" />
-                <br/><span><?php echo $tweet->text ?></span>
-              </p>
+                <!-- Image principale -->
+                <br/><span><?php echo $tweet->text; ?></span>
+                <!-- Texte -->
+                <br/> <img src="<?php echo $tweet->user->profile_image_url; ?>"alt="user picture" />
+                <!-- Image de profil -->
+
+              </li>
               <?php
               endforeach;
         ?>
-
+        </ul>
     </div>
 
   </body>

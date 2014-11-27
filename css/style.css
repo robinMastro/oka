@@ -162,7 +162,7 @@ h4{
   background: url('../images/h2-heart.png') no-repeat 0 0;
 }
 #page-data .presentation{
-  background: url('../images/background-data.jpg') no-repeat center center;
+  background: url('../images/cafegourmand.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -303,7 +303,7 @@ nav ul li:hover{
 /*	PRESENTATION
 /************************************************************************/
 .presentation {
-    background: url('../images/screen.png') no-repeat center center; 
+    background: url('../images/accueil.png') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -352,6 +352,14 @@ nav ul li:hover{
 /************************************************************************/
 /*	INFOS HOME
 /************************************************************************/
+
+#page-infos .presentation{
+  background: url('../images/background-data.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .infosHome .wrapper{
   text-align: center;

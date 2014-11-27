@@ -209,14 +209,14 @@
                   <?php include 'map.php';?> 
                 <!-- END PAGE MAPMONDE -->
                 
-                <!-- PAGE MAPMONDE -->
+                <!-- PAGE INFO -->
                   <?php include 'info.php';?> 
-                <!-- END PAGE MAPMONDE -->
+                <!-- END PAGE INFO -->
 
               
-              <!-- PAGE HOMEPAGE -->
+              <!-- PAGE ECO -->
                 <?php include 'eco.php';?>      
-              <!-- END PAGE HOMEPAGE -->
+              <!-- END PAGE ECO -->
               
               
                 

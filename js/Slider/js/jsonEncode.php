@@ -3,7 +3,7 @@
     /* Connexion à une base ODBC avec l'invocation de pilote */
     $dsn = "mysql:host=localhost;dbname=oka;charset=utf8";
     $user = 'root';
-    $password = ''; // Pour WAMP
+    $password = 'root'; // Pour WAMP
     try {
         $dbh = new PDO($dsn, $user, $password);
 

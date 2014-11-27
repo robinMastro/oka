@@ -5,6 +5,7 @@ this.btn1pos=50;
 this.btn2pos=50;
 this.btn3pos=50;
 this.cacheSlider=((window.innerWidth*20)/100)+150;
+this.xpos=0;
 
 document.getElementById("btn1").style.left= ((300*this.btn1pos)/100)+"px";
 document.getElementById("btn2").style.left= ((300*this.btn2pos)/100)+"px";
@@ -24,47 +25,83 @@ var choiceCaf=
 {
 	drag1 : function(e){
 		e.preventDefault();
-		document.getElementById("btn1").style.left=e.layerX+"px";
-		document.getElementById("sliderRange1").style.width=((e.layerX)/3)+"%";
-		self.btn1pos=parseInt(e.layerX/3);
+
+		if(e.offsetX==undefined) // this works for Firefox
+		{
+			self.xpos = e.layerX;
+		}             
+		else                     // works in Google Chrome
+		{
+			self.xpos = e.offsetX;
+		}
+
+		document.getElementById("btn1").style.left=self.xpos+"px";
+		document.getElementById("sliderRange1").style.width=((self.xpos)/3)+"%";
+		self.btn1pos=parseInt(self.xpos/3);
 		self.clicked1=true;
 		console.log('test');
 	},
 	drag2 : function(e){
 		e.preventDefault();
-		document.getElementById("btn2").style.left=e.layerX+"px";
-		document.getElementById("sliderRange2").style.width=((e.layerX)/3)+"%";
-		self.btn2pos=parseInt(e.layerX/3);
+
+		if(e.offsetX==undefined) // this works for Firefox
+		{
+			self.xpos = e.layerX;
+		}             
+		else                     // works in Google Chrome
+		{
+			self.xpos = e.offsetX;
+		}
+		document.getElementById("btn2").style.left=self.xpos+"px";
+		document.getElementById("sliderRange2").style.width=((self.xpos)/3)+"%";
+		self.btn2pos=parseInt(self.xpos/3);
 		self.clicked2=true;
 	},
 	drag3 : function(e){
 		e.preventDefault();
-		document.getElementById("btn3").style.left=e.layerX+"px";
-		document.getElementById("sliderRange3").style.width=((e.layerX)/3)+"%";
-		self.btn3pos=parseInt(e.layerX/3);
+
+		if(e.offsetX==undefined) // this works for Firefox
+		{
+			self.xpos = e.layerX;
+		}             
+		else                     // works in Google Chrome
+		{
+			self.xpos = e.offsetX;
+		}
+		document.getElementById("btn3").style.left=self.xpos+"px";
+		document.getElementById("sliderRange3").style.width=((self.xpos)/3)+"%";
+		self.btn3pos=parseInt(self.xpos/3);
 		self.clicked3=true;
 	},
 	move : function (e){
 
 		e.preventDefault();
 
+		if(e.offsetX==undefined) // this works for Firefox
+		{
+			self.xpos = e.layerX;
+		}             
+		else                     // works in Google Chrome
+		{
+			self.xpos = e.offsetX;
+		}
 		if(self.clicked1==true)
 		{
-			document.getElementById("btn1").style.left=e.layerX+"px";
-			document.getElementById("sliderRange1").style.width=((e.layerX)/3)+"%";
-			self.btn1pos=parseInt(e.layerX/3);
+			document.getElementById("btn1").style.left=self.xpos+"px";
+			document.getElementById("sliderRange1").style.width=((self.xpos)/3)+"%";
+			self.btn1pos=parseInt(self.xpos/3);
 		}
 		if(self.clicked2==true)
 		{
-			document.getElementById("btn2").style.left=e.layerX+"px";
-			document.getElementById("sliderRange2").style.width=((e.layerX)/3)+"%";
-			self.btn2pos=parseInt(e.layerX/3);
+			document.getElementById("btn2").style.left=self.xpos+"px";
+			document.getElementById("sliderRange2").style.width=((self.xpos)/3)+"%";
+			self.btn2pos=parseInt(self.xpos/3);
 		}
 		if(self.clicked3==true)
 		{
-			document.getElementById("btn3").style.left=e.layerX+"px";
-			document.getElementById("sliderRange3").style.width=((e.layerX)/3)+"%";
-			self.btn3pos=parseInt(e.layerX/3);
+			document.getElementById("btn3").style.left=self.xpos+"px";
+			document.getElementById("sliderRange3").style.width=((self.xpos)/3)+"%";
+			self.btn3pos=parseInt(self.xpos/3);
 		}
 		switch(true){
 			case self.btn2pos>45 && self.btn2pos<=70 && self.btn3pos<=20:

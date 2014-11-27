@@ -162,7 +162,7 @@ h4{
   background: url('../images/h2-heart.png') no-repeat 0 0;
 }
 #page-data .presentation{
-  background: url('../images/cafegourmand.png') no-repeat center center;
+  background: url('../images/cafegourmand.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -303,7 +303,7 @@ nav ul li:hover{
 /*	PRESENTATION
 /************************************************************************/
 .presentation {
-    background: url('../images/accueil.png') no-repeat center center; 
+    background: url('../images/accueil.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -360,7 +360,6 @@ nav ul li:hover{
   -o-background-size: cover;
   background-size: cover;
 }
-
 .infosHome .wrapper{
   text-align: center;
   padding-bottom: 15px;
@@ -761,7 +760,7 @@ transform: translateZ(.52px) scale(.75);
 }
 #dataCoffee ul li{
   float: left;
-  margin: 0 28px;
+  margin: 0 25px;
 }
 #dataCoffee ul li:first-of-type{
   margin-left: 0 !important;
@@ -1473,6 +1472,34 @@ section.recetteHome.recetteHomeRight h3:after{
   margin-left: 40px;
 }
 
+.appHome{
+  background: url('../images/app-background.jpg') repeat;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 0 !important;
+}
+.appHome h3:after {
+  display: none;
+}
+.appHome img{
+  float: right;
+  padding-right: 0;
+  padding-left: 40px;
+  position: relative;
+  top: 1px;
+}
+.appHome h3, .appHome p{
+  float: right;
+  width: 380px;
+}
+.appHome h3{
+  padding-top: 65px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.appHome p{
+  font-size: 18px;
+}
 
 /************************************************************************/
 /************************************************************************/

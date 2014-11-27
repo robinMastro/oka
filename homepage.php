@@ -15,19 +15,19 @@
                       <p class="introTitle">Le café fait parti de notre quotidien et est pourtant si méconnu. Retrouvez toutes les informations de la torréfaction à la préparation, le café n'aura plus de secret pour vous.</p>
                       <ul>
                         <li>
-                          <img src="images/image2.png" alt="Créations"/>
+                          <img src="images/image2.png" alt="Arabica Robusta"/>
                           <h4>Arabica/Robusta</h4>
                           <p>Vous en entendez souvent parler mais finalement quelle est la différence ? Une petite explication s'impose.</p>
                         </li>
     
                         <li>
-                          <img src="images/Torrefaction.png" alt="Créations"/>
+                          <img src="images/Torrefaction.jpg" alt="Torréfaction"/>
                           <h4>Torréfaction</h4>
                           <p>Elle permet de donner son goût si particulier au grain de café. Retrouvez les différentes techniques.</p>
                         </li>
     
                         <li>
-                          <img src="images/cafePreparation.png" alt="Créations"/>
+                          <img src="images/cafePreparation.jpg" alt="Préparation"/>
                           <h4>Préparation</h4>
                           <p>Il existe différentes façons de préparer le café avant de pouvoir en déguster ses saveurs, découvrez les.</p>
                         </li>
@@ -40,14 +40,21 @@
                     </div><!-- *** END WRAPPER *** -->
                   </section><!-- *** END INFOS HOME *** -->
 
-                  <div class="screen">
-                    <p>Lorem ipsum dolor sit amet</p>
-                  </div><!-- *** END SCREEN *** -->
+                  
+                  <section class="recetteHome appHome">
+                    <div class="wrapper">
+                      <img src="images/app-oka.png" alt="Oka application"/>
+                      <h3>Consommer éco-responsable</h3>
+                      <p>Rendez-vous vite sur l’application mobile Oka afin de découvrir les cafés responsable dans Paris.</p>
+                      <hr class="clear"/>
+                        
+                    </div><!-- *** END WRAPPER *** -->
+                  </section><!-- *** END RECETTE HOME *** -->
                   
                   <section class="recetteHome">
                     <div class="wrapper">
                       <h3>Boissons gourmandes</h3>
-                      <img src="images/cafeRecette.png" alt="Créations"/>
+                      <img src="images/cafeRecette.jpg" alt="Boissons gourmandes"/>
                       <p>Retrouvez une selection de boisson gourmandes et raffinées. Afin que vous puissiez trouver la recette qui vous conviendra la force en café, en lait et en sucre est indiquée. De même, vous pourrez voir les calories afin de ne pas faire d'entorse à votre régime ! Bien sur une petite description vous permettra également de choisir parfaitement votre boisson. Laissez-vous tenter !</p>
                       <a onclick="toPage(1)" href="#" class="button">Voir les recettes</a>
                       <hr class="clear"/>

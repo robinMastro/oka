@@ -8,7 +8,6 @@ var init = 0;
 function btncafe(e) {
 	UI.fermslide(function(){
 		setTimeout(function(){
-			model.getList(function(userPos){
 				//Recupere la liste des bars
 				model.getPosition(function(userPos){
 				// Récupere la position de l'utilisateur
@@ -33,20 +32,18 @@ function btncafe(e) {
 						});
 					};
 				});
-			});
 		}, 500);
 	});
 }
 function btnnom(e) {
 	UI.fermslide(function(){
-		setTimeout(function(){model.getList(function(userPos){
+		setTimeout(function(){
 		// Récupere la position de l'utilisateur
 			UI.constructOff(function(){
 				UI.constructProcess(function(){
 					setTimeout(function(){UI.openslide()}, 500);
 				});
-			});
-		});}, 500);
+			});;}, 500);
 	});
 }
 

@@ -429,10 +429,14 @@ nav ul li:hover{
 }
 .anecdote .wrapper{
   width: 675px;
+  height: 400px;
   text-align: center;
-  padding-bottom: 80px;
 }
 .anecdote a{
+  bottom: 0;  
+  left: 50%;
+  margin-left: -78px;
+  position: absolute;
   color: #aaaaaa;
   font-family: "proxima-nova", helvetica, arial, sans-serif;
   text-decoration: none;

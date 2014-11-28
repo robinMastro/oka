@@ -19,15 +19,16 @@
     <div id="page">
     
       <div class="wrapperH1">
-        <h1>Lorem ipsum</h1>
+        <h1><img src="images/oka.png" alt="Oka"/></h1>
+        <p>Une histoire de café <span>À partager</span></p>
       </div>
       
       <div class="wrapper">
         <a href="slider/index.html">map <span>Découvrez les cafés à proximité de votre ville.</span></a>
       </div>
-      
-      <a href="twitter/index.php">twitter</a>
-      
+      <div class="wrapper">
+        <a href="twitter/index.php">twitter <span>Partagez votre café du matin.</span></a>
+      </div>
     
     </div><!-- *** END PAGE *** -->
     

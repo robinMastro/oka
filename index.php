@@ -15,7 +15,7 @@
         
         <script src="js/main.js"></script>
     </head>
-    <body onload="loader(); Anecdote(); detectmob()">
+    <body onload="loader(); Anecdote(); window.detectmob()">
       <div id="roue">
         <div class="windows8">
           <div class="wBall" id="wBall_1">

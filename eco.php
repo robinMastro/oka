@@ -29,9 +29,15 @@
     <section class="videoEco">
       <div class="wrapper">
       
-      <div class="videoJs">
-        <p>Regarder la vidéo <span>L'éco responsabilité</span></p>
-        <a class="play" href="#">
+      <div class="videoJs" id="videoJs3">
+        <p id="postextVid3">Regarder la vidéo <span>L'éco responsabilité</span></p>
+        <a class="play" id="button3" href="#">
+          <span class="fui-play"></span>
+        </a> 
+        <video id="video3" class="video" poster="images/preview3.jpg" width="960" height="540" loop >
+          <source src="assets/02.mp4" type='video/mp4'>
+          <p>Your user agent does not support the HTML5 Video element.</p>
+        </video>
           <span class="fui-play"></span>
         </a> 
       </div><!-- *** END VIDEO JS ECO *** -->
@@ -108,9 +114,15 @@
     <section class="videoEco">
       <div class="wrapper">
       
-      <div class="videoJs">
-        <p>Regarder la vidéo <span>Rainforest Alliance coffee</span></p>
-        <a class="play" href="#">
+      <div class="videoJs" id="videoJs2">
+        <p id="postextVid2">Regarder la vidéo <span>Rainforest Alliance coffee</span></p>
+        <a class="play" id="button2" href="#">
+          <span class="fui-play"></span>
+        </a> 
+        <video id="video2" class="video" poster="images/preview1.jpg" width="960" height="540" loop >
+          <source src="assets/rainforest.mp4" type='video/mp4'>
+          <p>Your user agent does not support the HTML5 Video element.</p>
+        </video>
           <span class="fui-play"></span>
         </a> 
       </div><!-- *** END VIDEO JS ECO *** -->

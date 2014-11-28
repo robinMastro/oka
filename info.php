@@ -35,11 +35,15 @@
     <section class="videoEco">
       <div class="wrapper">
       
-      <div class="videoJs">
-        <p>Regarder la vidéo <span>Arabica / Robusta</span></p>
-        <a class="play" href="#">
+      <div class="videoJs" id="videoJs1">
+        <p id="postextVid">Regarder la vidéo <span>Arabica / Robusta</span></p>
+        <a class="play" id="button" href="#">
           <span class="fui-play"></span>
         </a> 
+        <video id="video" class="video" poster="images/preview2.jpg" width="960" height="540" loop >
+          <source src="assets/01.mp4" type='video/mp4'>
+          <p>Your user agent does not support the HTML5 Video element.</p>
+        </video>
       </div><!-- *** END VIDEO JS ECO *** -->
       
       </div><!-- *** END WRAPPER *** -->

@@ -112,6 +112,26 @@ var model=
     "adresse":"2 rue Théophile Roussel 75012 Paris"
 	}, 
 	{
+    "nom":"Starbuck Saint-Michel", 
+    "adresse":"24 boulevard Saint-Michel 75006 Paris"
+	},
+	{
+    "nom":"Starbuck Montparnasse", 
+    "adresse":"70 boulevard du Montparnasse 75014 Paris"
+	},
+	{
+    "nom":"Starbuck Saint-Dominique", 
+    "adresse":"90 rue Saint-Dominique 75007 Paris"
+	},
+	{
+    "nom":"Costa coffee - Rambuteau", 
+    "adresse":"38 rue Rambuteau 75003 Paris"
+	},
+	{
+    "nom":"Costa coffee - Rochechouard", 
+    "adresse":"82 Boulevard Rochechouart 75018 Paris"
+	},
+	{
     "nom":"HETIC", 
     "adresse":"27 Bis Rue du Progrès 93100 Montreuil"
 	}

@@ -1242,7 +1242,7 @@ transform: translateZ(.52px) scale(.75);
 }
 
 /************************************************************************/
-/*	VIDEOECO
+/*  VIDEOECO
 /************************************************************************/
 .videoEco .wrapper{
   width: 960px;
@@ -1270,12 +1270,19 @@ transform: translateZ(.52px) scale(.75);
   -o-background-size: cover;
   background-size: cover;
 }
+.video
+{
+  position:absolute;
+  top : 0px;
+  left:0px;
+  z-index: 1;
+}
 .videoJs{
-  background: url('../images/video-preview.jpg') no-repeat center center;
+  /*background: url('../images/video-preview.jpg') no-repeat center center;*/
   height: 540px;
   width: 960px;
-  padding: 30px;
   cursor: pointer;
+  overflow: hidden;
 }
 .videoJs p{
   font-family: "kepler-std-extended", helvetica, arial, sans-serif;
@@ -1284,6 +1291,20 @@ transform: translateZ(.52px) scale(.75);
   font-size: 24px;
   color: white;
   text-align: left;
+  position: absolute;
+  z-index: 5;
+  left:5%;
+  top:5%;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.postextHaute
+{
+  margin-top: -10%;
+  opacity: 0;
 }
 .videoJs span{
   font-family: "proxima-nova", helvetica, arial, sans-serif;
@@ -1314,7 +1335,8 @@ transform: translateZ(.52px) scale(.75);
   position: relative;
   text-align: center;
   text-decoration: none;
-  top: 100px;
+  top: 200px;
+  z-index: 10;
 }
 .play:hover, .videoJs:hover .play{
   background-color: rgba(0, 0, 0, .8); 

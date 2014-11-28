@@ -39,14 +39,13 @@ function btncafe(e) {
 }
 function btnnom(e) {
 	UI.fermslide(function(){
-		setTimeout(function(){model.getList(function(userPos){
+		setTimeout(function(){
 		// Récupere la position de l'utilisateur
 			UI.constructOff(function(){
 				UI.constructProcess(function(){
 					setTimeout(function(){UI.openslide()}, 500);
 				});
-			});
-		});}, 500);
+			});;}, 500);
 	});
 }
 

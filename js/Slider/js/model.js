@@ -94,17 +94,26 @@ var model=
 		callback.call(this);
 	},
 
-	getList: function (callback) {
-		var xmlhttp;
-		xmlhttp = new XMLHttpRequest();
-
-		xmlhttp.onreadystatechange = function(){
-		    if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
-		        model.baradress = JSON.parse(xmlhttp.response);
-		        callback.call(this);
-		    }
-		}
-		xmlhttp.open("GET",'js/jsonEncode.php', true);
-		xmlhttp.send();
+	baradress : [
+    {
+    "nom":"Comptoir Général", 
+    "adresse":"80 quai de Jemmapes 75010 Paris"
+	}, 
+	{
+    "nom":"Le Biloba", 
+    "adresse":"12 rue Jean Jacques Rousseau 75010 Paris"
+	}, 
+	{
+    "nom":"Ecolo Café", 
+    "adresse":"257 rue St Denis 75002 Paris"
+	}, 
+	{
+    "nom":"Perto Cacao", 
+    "adresse":"2 rue Théophile Roussel 75012 Paris"
+	}, 
+	{
+    "nom":"HETIC", 
+    "adresse":"27 Bis Rue du Progrès 93100 Montreuil"
 	}
+	]
 }
